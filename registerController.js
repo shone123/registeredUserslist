@@ -15,10 +15,10 @@
                 .then(function (response) {
                     if (response.success) {
                         
-                        $(".success").show().slideDown( 300 ).delay( 800 ).slideUp( 400 );
+                        $(".success").show().slideDown( 600 ).delay(1000).slideUp(600);
                         $location.path('/login');
                     } else {
-                          $(".error").show().slideDown( 300 ).delay(2000 ).slideUp( 400 );
+                          $(".error-register").show().slideDown( 600 ).delay(1000 ).slideUp( 600 );
                           $('#processing').hide();
                     }
                 });
