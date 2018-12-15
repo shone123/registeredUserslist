@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/app.css">
+
+<body ng-app="app">
+
+<div class="success col-md-6 col-md-offset-3" style="display: none;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Success!</strong> Registerd succesfully.
+</div>
+
+<div class="error col-md-6 col-md-offset-3" style="display: none;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Username or password is incorrect</strong>
+</div>
+
+<div class="error-register col-md-6 col-md-offset-3" style="display: none;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>User is already exist</strong>
+</div>
+
+
+ <!--loader-->  
+ <div id="processing" style="display: none"><img src="images/spinner.gif" class="ajax-loader" /></div>   
+     
+    
+ <div ng-view></div>
+
+    
+   <!--libraries-->
+   <script type="text/javascript" src="js/angular.min.js"></script>
+   <script type="text/javascript" src="js/angular-route.js"></script>
+   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+   <script type="text/javascript" src="js/angular-cookies.min.js"></script>
+
+    <script type="text/javascript" src="app/app.js"></script>
+   
+    <script src="services/authenticationService.js"></script>
+    <script src="services/flashServices.js"></script>
+
+    <!-- Fake user service for demo that uses local storage -->
+    <script src="services/localstorageService.js"></script>   
+
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/registerController.js"></script>
+    
+</body>
+</html>
