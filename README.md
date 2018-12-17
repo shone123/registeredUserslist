@@ -17,6 +17,7 @@ login and register system.
     <script type="text/javascript" src="app/app.js"></script>
    
     <script src="services/authenticationService.js"></script>
+    <script src="services/flashServices.js"></script>
 
     <!-- Fake user service for demo that uses local storage -->
     <script src="services/localstorageService.js"></script>   
