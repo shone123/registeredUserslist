@@ -25,6 +25,7 @@ login and register system.
     <script src="controllers/homeController.js"></script>
     <script src="controllers/loginController.js"></script>
     <script src="controllers/registerController.js"></script>
+    <script src="directives/inputvalidation_directive.js"></script>
    3. run on http server with node js.
    4. register with few details then login with email and password to see all the registerd users as 
       table format.
